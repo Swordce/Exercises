@@ -7,18 +7,9 @@
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:text="题目一"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="40dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text=""/>
-    </RadioGroup>
+        android:background="#fe90"/>
 </LinearLayout>

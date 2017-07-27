@@ -9,22 +9,30 @@ import com.raizlabs.android.dbflow.structure.BaseModel;
  * Created by zwj on 2017/7/25.
  */
 @Table(database = AppDatabase.class)
-public class SelectLib extends BaseModel{
+public class SelectLib extends BaseModel {
+    @PrimaryKey(autoincrement = true)
     @Column
     int id;
-    @PrimaryKey
     @Column
-    short titleId;
+    public int titleId;
     @Column
-    String title;
+    public String title1;
     @Column
-    String answerA;
+    public String title2;
     @Column
-    String answerB;
+    public String answerA;
     @Column
-    String answerC;
+    public String answerB;
     @Column
-    String answerD;
+    public String answerC;
     @Column
-    String correctAnswer;
+    public String answerD;
+    @Column
+    public String correctAnswer;
+    @Column(length = 0)
+    public int errCount;
+    @Column(defaultValue = "")
+    public String answerTime;
+    @Column(defaultValue = "")
+    public String explain;
 }

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
-    <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <com.wordDemo.myview.PageRecyclerView
+        android:id="@+id/cusom_swipe_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.wordDemo.MainActivity"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/tv_word"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!" />
-    </LinearLayout>
-</ScrollView>
+        android:layout_height="match_parent" />
+
+    <com.wordDemo.myview.PageIndicatorView
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"/>
+</LinearLayout>
 

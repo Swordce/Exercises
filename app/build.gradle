@@ -45,4 +45,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile files('libs/poi-scratchpad-3.17-beta1.jar')
     compile files('libs/poi-3.17-beta1.jar')
+    compile 'com.android.support:recyclerview-v7:25.3.1'
 }
